@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+
+<body>
+    <h1>CAR DETAILS</h1>
+    <form>
+            <div>
+                <label for="carname"><b>Car Name:</b></label>
+                <input type="text" id="carname" name="carname">
+            </div>
+            <div>
+                <label for="year"><b>Year:</b></label>
+                <input type="text" id="year" name="year">
+            </div>
+            <div>
+                <label for="typeoffuel"><b>Type of Fuel:</b></label>
+            </div>
+            <div>
+                <div><input type="radio" onclick="FuelTypeCheck();" name="fueltype" id="petrolCheck" value="petrol">Petrol</div>
+                <div><input type="radio" onclick="FuelTypeCheck();" name="fueltype" id="dieselCheck" value="diesel">Diesel</div>
+            </div>
+            <div id="ifpetrol" style="display:none;">
+                <b>Type of Car:</b>
+                <div><input type="radio" onclick="PetrolTypeCheck();" name="petroltype" id="manualCheck" value="Manual">Manual</div>
+                <div><input type="radio" onclick="PetrolTypeCheck();" name="petroltype" id="automaticCheck" value="Automatic">Automatic</div>
+                <div><input type="radio" onclick="PetrolTypeCheck();" name="petroltype" id="semiautomaticCheck" value="SemiAutomatic">SemiAutomatic</div>
+            </div>
+            <div id="ifmanual" style="display:none;">
+                <b> Gear Type:</b>
+                <div><input type="radio" onclick="ManualTypeCheck();" name="manualtype" id="fourCheck" value="Four">Four</div>
+                <div><input type="radio" onclick="ManualTypeCheck();" name="manualtype" id="fiveCheck"value="Five">Five</div>
+            </div>
+            <div id="ifautomatic" style="display:none;">
+                <b> Automatic Type:</b>
+                <div><input type="radio" onclick="AutomaticTypeCheck();" name="automatictype" id="cmtCheck" value="Cmt">CMT</div>
+                <div><input type="radio" onclick="AutomaticTypeCheck();" name="automatictype" id="dctCheck" value="Dct">DCT</div>
+                <div><input type="radio" onclick="AutomaticTypeCheck();" name="automatictype" id="amtCheck"value="amt">AMT</div>
+            </div>
+
+            <div id="ifdiesel" style="display:none;">
+                <b>Type of Car:</b>
+                <div><input type="radio" onclick="DieselTypeCheck();" name="dieseltype" id="manualdCheck" value="Manual">Manual</div>
+                <div><input type="radio" onclick="DieselTypeCheck();" name="dieseltype" id="automaticdCheck" value="Automatic">Automatic</div>
+                <div><input type="radio" onclick="DieselTypeCheck();" name="dieseltype" id="semiautomaticdCheck" value="SemiAutomatic">SemiAutomatic</div>
+            </div>
+            <div id="ifdmanual" style="display:none;">
+                <b> Gear Type:</b>
+                <div><input type="radio" onclick="ManualdTypeCheck();" name="manualdtype" id="fourdCheck" value="four">Four</div>
+                <div><input type="radio" onclick="ManualdTypeCheck();" name="manualdtype" id="fivedCheck" value="five">Five</div>
+            </div>
+            <div id="ifdautomatic" style="display:none;">
+                <b> Automatic Type:</b>
+                <div><input type="radio" onclick="AutomaticdTypeCheck();" name="automaticdtype" id="cmtdCheck" value="cmt"> CMT</div>
+                <div><input type="radio" onclick="AutomaticdTypeCheck();" name="automaticdtype" id="dctdCheck" value="dct">DCT</div>
+                <div><input type="radio" onclick="AutomaticdTypeCheck();" name="automaticdtype" id="amtdCheck" value="amt">AMT</div>
+            </div>
+            
+        </div>
+        <button onclick="Myfunction()" > submit</button>
+    </form>
+    <script src="prototype.js"></script>
+</body>
+
+</html>
